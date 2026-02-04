@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Information System</h1>
+            <p class="subtitle">Search for student details by name</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter student name..." autocomplete="off">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div id="searchSuggestions" class="suggestions"></div>
+            
+            <div class="search-filters">
+                <div class="filter-group">
+                    <label for="rollNoInput">Roll No / User ID:</label>
+                    <input type="text" id="rollNoInput" placeholder="Enter Roll No or User ID..." autocomplete="off">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="emailInput">Email / Phone:</label>
+                    <input type="text" id="emailInput" placeholder="Enter Email or Phone..." autocomplete="off">
+                </div>
+                
+                <button id="filterSearchBtn" class="filter-btn">Filter Search</button>
+            </div>
+        </div>
+
+        <div id="results" class="results-container"></div>
+    </div>
+
+    <script src="hr-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
